@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(water-bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turtle {
+    font-size: clamp(0.5px, 0.08vw, 1px);
+    height: 600em;
+    width: 600em;
+    transform: rotate(-30deg);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border: 4px solid darkgreen;
+    border-radius: 50%;
+}
+
+.light-green {
+    background-color: rgb(153, 224, 153);
+}
+
+.head {
+    height: 160em;
+    width: 170em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30em;
+}
+
+.eyes {
+    display: flex;
+    gap: 30em;
+    position: relative;
+    top: 20em;
+}
+
+.eye {
+    background-color: black;
+    height: 50em;
+    width: 30em;
+    border-radius: 50%;
+}
+
+.eyelight {
+    background-color: white;
+    height: 25em;
+    width: 15em;
+    border-radius: 50%;
+    position: relative;
+    top: 2em;
+    left: 5em;
+}
+
+.hands {
+    display: flex;
+    gap: 220em;
+    position: absolute;
+    top: 230em;
+}
+
+.hand {
+    height: 200em;
+    width: 100em;
+}
+
+.hand1 {
+    transform: rotate(50deg);
+}
+
+.hand2 {
+    transform: rotate(-50deg);
+}
+
+.body {
+    height: 350em;
+    width: 350em;
+    background: rgb(213, 213, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.body-inside {
+    height: 300em;
+    width: 300em;
+    background: rgb(65, 167, 65);
+    overflow: hidden;
+}
+
+.bodycircle1 {
+    height: 170em;
+    width: 200em;
+    position: relative;
+    bottom: 30em;
+    left: 50em;
+}
+
+.bodycircle2 {
+    height: 100em;
+    width: 150em;
+    position: relative;
+    bottom: 70em;
+    right: 70em;
+}
+
+.bodycircle3 {
+    height: 180em;
+    width: 200em;
+    position: relative;
+    bottom: 90em;
+}
+
+.bodycircle4 {
+    height: 150em;
+    width: 200em;
+    position: relative;
+    bottom: 340em;
+    left: 180em;
+}
+
+.legs {
+    display: flex;
+    gap: 20em;
+    position: absolute;
+    top: 430em;
+}
+
+.leg {
+    height: 200em;
+    width: 100em;
+}
+
+.leg1 {
+    transform: rotate(30deg);
+}
+
+.leg2 {
+    transform: rotate(-30deg);
+}
+
+.tail {
+    height: 160em;
+    width: 60em;
+}
+
+.turtle:hover {
+    animation: turtle_swim 2s infinite ease-in-out;
+}
+
+.turtle:hover .hand1 {
+    animation: hand1_move 0.6s infinite ease-in-out;
+}
+
+.turtle:hover .hand2 {
+    animation: hand2_move 0.6s infinite ease-in-out;
+}
+
+.turtle:hover .leg1 {
+    animation: leg1_move 0.6s infinite ease-in-out;
+}
+
+.turtle:hover .leg2 {
+    animation: leg2_move 0.6s infinite ease-in-out;
+}
+
+@keyframes turtle_swim {
+
+    0%,
+    100% {
+        transform: rotate(-30deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-30deg) translateY(-100em);
+    }
+}
+
+@keyframes hand1_move {
+
+    0%,
+    100% {
+        transform: rotate(50deg);
+    }
+
+    50% {
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes hand2_move {
+
+    0%,
+    100% {
+        transform: rotate(-50deg);
+    }
+
+    50% {
+        transform: rotate(-100deg);
+    }
+}
+
+@keyframes leg1_move {
+
+    0%,
+    100% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(65deg);
+    }
+}
+
+@keyframes leg2_move {
+
+    0%,
+    100% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(-65deg);
+    }
+}
+
+@media(max-width:800px) {
+    .turtle {
+        scale: 0.8;
+    }
+}

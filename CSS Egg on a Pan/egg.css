@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    font-size: clamp(0.5px , 2vw , 1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50em auto;
+    min-height: 600em;
+    width: 600em;
+    border-radius: 0;
+    padding: 20em;
+}
+div{
+    border-radius: 50%;
+}
+.pan{
+    height: 400em;
+    width: 400em;
+    background: gray;
+    border: 4px solid rgb(60, 59, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.pan-area{
+    height: 350em;
+    width: 350em;
+    background: rgb(153, 152, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pan-handle{
+    height: 550em;
+    width: 100em;
+    background: gray;
+    position: relative;
+    bottom: 30em;
+    border: 4px solid rgb(60, 58, 58);
+}
+.pan-grip{
+    height: 130em;
+    width: 90em;
+    background-color: rgb(60, 58, 58);
+    border-radius: 5em;
+    position: relative;
+    bottom: 120em;
+}
+/* Egg */
+.egg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.egg-yolk{
+    position: relative;
+    height: 130em;
+    width: 130em;
+    background: rgb(244, 177, 21);
+    border: 4px solid rgb(226, 147, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.eyes{
+    display: flex;
+    gap: 25em;
+}
+.eye{
+    height: 30em;
+    width: 20em;
+    background: black;
+}
+.eyelight{
+    height: 15em;
+    width: 10em;
+    background: white;
+}
+.blushes{
+    display: flex;
+    gap: 25em;
+}
+.blush{
+    width: 30em;
+    height: 10em;
+    background: pink;
+}
+.smile{
+    height: 20em;
+    width: 30em;
+    border-bottom: 4px solid black;
+}
+.white{
+    background-color: white;
+}
+.white{
+    position: absolute;
+    z-index: 1;
+}
+.egg-white1{
+    height: 100em;
+    width: 150em;
+    top: -20em;
+    left: -60em;
+}
+.egg-white2{
+    height: 110em;
+    width: 130em;
+    top: -30em;
+    right: -55em;
+}
+.egg-white3{
+    height: 120em;
+    width: 140em;
+    bottom: -40em;
+    left: -50em;
+}
+.egg-white4{
+    height: 150em;
+    width: 190em;
+    bottom: -30em;
+    right: -75em;
+}
+.egg-white5{
+    height: 90em;
+    width: 110em;
+    top: -55em;
+    left: 20em;
+}
+.egg-white6{
+    height: 90em;
+    width: 110em;
+    bottom: -60em;
+    left: 30em;
+}

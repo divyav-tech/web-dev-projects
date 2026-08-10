@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(154, 235, 153),rgb(241, 241, 153));
+}
+.container {
+    font-size: clamp(0.5px, 0.08vw, 1px);
+
+    /* background-color: rgb(151, 233, 187); */
+    background: url(bamboo-bg.jpg);
+    width: 500em;
+    height: 600em;
+    border-radius: 20em;
+    margin: 50em auto;
+    z-index: 999;
+    overflow: hidden;
+    border: 4em solid greenyellow;
+    box-shadow: rgba(74, 106, 88, 0.6) 0em 15em 15em;
+}
+
+.panda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200em;
+}
+
+.black {
+    background-color: black;
+    border-radius: 50%;
+    /* border: 1em solid grey; */
+}
+
+.white {
+    background-color: white;
+    border-radius: 50%;
+    /* border: 1em solid grey; */
+}
+
+.head {
+    transform: rotate(10deg);
+    z-index: 999;
+}
+
+.main-head {
+    width: 200em;
+    height: 150em;
+    position: relative;
+    z-index: 2;
+    left: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ears {
+    display: flex;
+    gap: 50em;
+}
+
+.ear {
+    height: 70em;
+    width: 80em;
+    z-index: 1;
+    position: relative;
+    top: 50em;
+}
+
+.eyes {
+    display: flex;
+    gap: 50em;
+    position: relative;
+}
+
+.eye {
+    height: 80em;
+    width: 50em;
+}
+
+.eye-light {
+    height: 20em;
+    width: 20em;
+    position: relative;
+    top: 20em;
+}
+
+.light1 {
+    left: 25em;
+}
+
+.light2 {
+    left: 5em;
+}
+
+.eye1 {
+    transform: rotate(30deg);
+}
+
+.eye2 {
+    transform: rotate(-30deg);
+}
+
+.nose {
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    top: 70em;
+}
+
+.smile {
+    width: 50em;
+    height: 22em;
+    position: relative;
+    bottom: 5em;
+}
+
+.smile-space {
+    width: 50em;
+    height: 20em;
+    position: absolute;
+    top: 95em;
+    z-index: 3;
+}
+
+.blushes {
+    display: flex;
+    gap: 80em;
+    position: absolute;
+    top: 90em;
+    opacity: 0;
+}
+
+.container:hover .blushes {
+    animation: blush 1s ease-in infinite;
+
+}
+
+@keyframes blush {
+    0% {
+        transform: scale(0.4);
+        opacity: 0.3;
+    }
+
+    25% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(1.1);
+        opacity: 1;
+    }
+
+}
+
+.blush {
+    background-color: pink;
+    height: 20em;
+    width: 40em;
+    border-radius: 50%;
+}
+
+.main-body {
+    height: 300em;
+    width: 260em;
+    position: relative;
+    bottom: 55em;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.body-part {
+    height: 150em;
+}
+
+.hands {
+    display: flex;
+    position: absolute;
+    gap: 150em;
+    top: 70em;
+    left: 70em;
+}
+
+.hand {
+    height: 250em;
+    width: 85em;
+    z-index: 3;
+}
+
+.hand1 {
+    transform: rotate(-25deg);
+    transform-origin: bottom center;
+    animation: none;
+    position: relative;
+    bottom: 45em;
+    left: 40em;
+}
+
+.hand2 {
+    position: relative;
+    top: 110em;
+    transform: rotate(-20deg);
+}
+
+.container:hover .hand1 {
+    animation: wave .8s ease-in-out infinite;
+}
+
+@keyframes wave {
+
+    0% {
+        transform: rotate(-40deg);
+    }
+
+    25% {
+        transform: rotate(-60deg);
+    }
+
+    50% {
+        transform: rotate(-25deg);
+    }
+
+    75% {
+        transform: rotate(-55deg);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+    }
+
+}
+
+/* Panda 2 */
+.tongue {
+    background-color: rgb(212, 92, 92);
+    border-radius: 50%;
+    width: 33em;
+    height: 16em;
+    position: absolute;
+    top: 105em;
+    left: 83em;
+    z-index: 3;
+}
+
+.mouth {
+    overflow: hidden;
+}

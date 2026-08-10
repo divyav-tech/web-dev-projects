@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-size: clamp(0.5px, 0.2vw, 1px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100em;
+}
+.cat {
+    height: 300em;
+    width: 300em;
+    border-radius: 50%;
+    border: 3em dashed red;
+    outline: 15em dotted red;
+    outline-offset: 5em;
+    margin: 50em ;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.card1{
+    background-color: pink;
+
+}
+.card2{
+    background-color: rgb(152, 237, 236);
+}
+.card3{
+    background-color: rgb(224, 196, 251);
+}
+.head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(10deg);
+    position: relative;
+    top: 30em;
+}
+
+.mainhead,
+.pupil,
+.ear1,
+.ear2,
+.pupil,
+.catbody,
+.tail {
+    background-color: black;
+    border: 1em solid white;
+}
+
+.nose {
+    background-color: pink;
+}
+
+.mainhead {
+    height: 120em;
+    width: 150em;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    top: 20em;
+}
+
+.ears {
+    display: flex;
+    position: relative;
+    top: 100em;
+}
+
+.ear1,
+.ear2 {
+    height: 100em;
+    width: 60em;
+    border-radius: 50%;
+    margin: 5em;
+}
+
+.ear1 {
+    transform: rotate(-15deg);
+}
+
+.ear2 {
+    transform: rotate(15deg);
+}
+
+.eyes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 33em;
+}
+
+.eye1,
+.eye2 {
+    height: 40em;
+    width: 45em;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    margin: 8em;
+}
+
+.pupil {
+    height: 28em;
+    width: 28em;
+    border-radius: 50%;
+    position: relative;
+    top: 10em;
+    left: 3em;
+}
+
+.light-in-eye {
+    background-color: white;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.nose {
+    height: 8em;
+    width: 15em;
+    border-radius: 50%;
+    position: absolute;
+    top: 75em;
+    left: 65em;
+}
+
+.catbody {
+    height: 220em;
+    width: 150em;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    position: relative;
+    top: -5;
+    left: 20em;
+}
+
+.tail {
+    height: 150em;
+    width: 50em;
+    border-radius: 50%;
+    position: relative;
+    left: 25em;
+    top: 80em;
+    transform: rotate(-10deg);
+}
+
+/* Whiskers */
+.whiskers span {
+    position: absolute;
+    width: 30em;
+    height: 2em;
+    background-color: black;
+}
+
+.whiskers {
+    z-index: 2;
+}
+
+.left.top {
+    left: -20em;
+    top: 200em;
+    transform: rotate(-5deg);
+}
+
+.left.bottom {
+    left: -20em;
+    top: 220em;
+    transform: rotate(-25deg);
+}
+
+.right.top {
+    right: -20em;
+    top: 200em;
+    transform: rotate(5deg);
+}
+
+.right.bottom {
+    right: 0em;
+    top: 220em;
+    transform: rotate(25deg);
+}
