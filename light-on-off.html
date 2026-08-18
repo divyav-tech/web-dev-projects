@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light ON/OFF</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 80px;
+        }
+        #bulb{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            background-color: gray;
+            box-shadow: 0 0 10px #000;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .on{
+            background-color: green ;
+            color: white;
+
+        }
+
+        .off{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>LIGHT ON/OFF SWITCH:</h1>
+    <div id="bulb"></div>
+
+    <button class="on" onclick="turnOn()">Turn ON</button>
+    <button class="off" onclick="turnOff()">Turn OFF</button>
+
+    <script>
+        function turnOn(){
+            document.getElementById("bulb").style.backgroundColor="yellow";
+        }
+
+        function turnOff(){
+            document.getElementById("bulb").style.backgroundColor= "gray";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+            background-color: #F5F5F5;
+        }
+
+        h1{
+            color: #333;
+        }
+
+        input{
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            width :  200px;
+
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+
+        }
+        
+        #result{
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+                    
+    </style>
+</head>
+<body>
+    
+    <h1>Student Grade Checker</h1>
+    <p>Enter your marks out of 100:</p>
+    <input type="number" id="marks" placeholder="Enter your marks here">
+    <br>
+    <button onclick="checkGrade()">Check Grade</button>
+
+
+    <div id="result"></div>
+
+    <script>
+        function checkGrade(){
+            var marks= document.getElementById("marks").value;
+            var grades="";
+
+            if(marks==""){
+                grade="Please enter your marks";
+            }else if(marks>=90){
+                grade ="Grade: A+ (Excellent)";
+            }else if(marks>=80){
+                grade= "Grade: A";
+            }else if (marks>=70){
+                grade ="Grade: B";
+            }else if(marks>=60){
+                grade ="Grade: C";
+            }else if(marks>=50){
+                grade= "Grade: D";
+            }else if(marks<50){
+                grade= "Grade: F (Fail)";
+            }else{
+                grade="invalid input";
+            }
+
+            document.getElementById("result").innerHTML = grade;
+        }
+    </script>
+</body>
+</html>

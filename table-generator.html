@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input,button{
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #output{
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Multiplication Table Generator</h2>
+    <input type="number" id="num" placeholder="Enter a number ">
+    <button onclick="generateTable()">Show Table</button>
+
+    <div id="output"></div>
+
+
+    <script>
+        function generateTable(){
+            var n= document.getElementById("num").value;
+            var result ="";
+
+            for (var i=1; i<=10; i++){
+                result += n + "x" +i + "=" + (n*i)+"<br>";
+            }
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
