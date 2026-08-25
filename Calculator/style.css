@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(249, 234, 216);
+}
+.calculator{
+    height: 40em;
+    width: 30em;
+    background-color: #FFF7E6;
+    border-radius: 20px;
+    margin: 5em auto;
+    box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.52),
+    inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#output{
+    background-color: #E4F1E7;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow:
+    inset 0 3px 6px rgba(0, 0, 0, 0.15),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.7);
+    font-size: 3.5em;
+    text-align: right;
+    padding: 0.5em 0.2em;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 95%;
+    justify-content: center;
+}
+button{
+    border: none;
+    box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.252),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9);
+    padding: 1em 1.8em;
+    border-radius: 20px;
+    font-size: 1.4em;
+    background: transparent;
+}
+
+button:active {
+    box-shadow: 
+        inset 0 3px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(2px);
+}
+
+.operation{
+    background-color: #ebe1f9;
+}
+
+.action-btn{
+    background-color: #f7c3da;
+}
+
+#delete{
+    background-color: #dff1cf;
+    padding: 1em 1.5em;
+}
+.input{
+    padding:1em 1.9em;
+}
+#evaluate{
+    padding: 1em 4.5em;
+}
