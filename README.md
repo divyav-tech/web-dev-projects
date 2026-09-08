@@ -26,7 +26,7 @@ This repository is a record of my journey of **learning by building**. Each proj
 | 🔢 **Counter App**           | A simple interactive counter                                  | HTML, CSS, JavaScript |
 | 🕐 **Digital Clock**         | A live clock displaying the current time                      | HTML, CSS, JavaScript |
 | 🎮 **Tic Tac Toe**           | A browser-based Tic Tac Toe game                              | HTML, CSS, JavaScript |
-| 🌱 **Habit Tracker**         | An interactive habit tracking application                     | HTML, CSS, JavaScript |
+| ⭐ **30 Days Of Little Things**| A interactive collection of 30 little things to do  to smile| HTML, CSS, JavaScript |
 
 > 🚧 **More projects are being added as I continue learning.**
 
@@ -118,6 +118,7 @@ web-dev-projects/
 ├── Counter App/
 ├── Digital Clock/
 ├── tic tac toe/
+├── 30 Days/
 ├── CSS Cat/
 ├── CSS Panda/
 ├── CSS Turtle/
