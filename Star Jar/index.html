@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Jar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cloud-1">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+    <div class="cloud-2">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+    <div class="cloud-3">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+    <div class="star star1">⭐</div>
+    <div class="star star2">⭐</div>
+    <div class="star star3">⭐</div>
+    <div class="star star4">⭐</div>
+    <div class="star star5">⭐</div>
+    <h1>The Star Jar</h1>
+    <p class="subtitle">Collect Little Moments That Make You Smile</p>
+
+    <div class="jar" id="jar">
+        <div class="jar-lid"></div>
+        <div class="jar-body" id="jarBody">
+            <div class="jar-shine"></div>
+            <div class="star-container" id="starContainer"></div>
+        </div>
+    </div>
+
+    <button id="addStarBtn">Add A Star✨</button>
+    <p class="instruction">✨Click The Jar To View A Secret Message ✨</p>
+    <p class="counter" id="counter"> <span id="number">0</span> STARS ⭐</p>
+    <div class="message-overlay" id="messageOverlay">
+        <div class="message-card">
+            <button class="close-message" id="closeMessage">×</button>
+            <div class="message-stars">✦ ✧ ✦</div>
+            <p class="message-label">A little message for you</p>
+            <p class="message" id="message">
+                You are doing better than you think. ✨
+            </p>
+            <div class="message-stars">✧ ✦ ✧</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
